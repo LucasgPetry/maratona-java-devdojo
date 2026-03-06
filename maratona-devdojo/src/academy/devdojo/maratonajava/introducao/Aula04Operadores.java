@@ -5,14 +5,14 @@ public class Aula04Operadores {
         //operadores básicos: + - * /
         int numero1 = 10;
         int numero2 = 20;
-        System.out.println(numero2-numero1);
-        System.out.println("Valor: "+numero2+numero1);
-        System.out.println(numero2+numero1+" Valor: "+numero2+numero1);
+        System.out.println(numero2 - numero1);
+        System.out.println("Valor: " + numero2 + numero1);
+        System.out.println(numero2 + numero1 + " Valor: " + numero2 + numero1);
 
         int resultadoInteiro = numero1 / numero2; //warning devido ao resultado 0
         double numero3 = 10;
         double numero4 = 20;
-        double resultadoDouble = numero3/numero4;
+        double resultadoDouble = numero3 / numero4;
 
         System.out.println(resultadoInteiro);
         System.out.println(resultadoDouble);
@@ -27,12 +27,12 @@ public class Aula04Operadores {
         boolean isDezIgualVinte = 10 == 20;
         boolean isDezDiferenteDeVinte = 10 != 20;
 
-        System.out.println("isDezMaiorQueVinte "+isDezMaiorQueVinte);
-        System.out.println("isDezMenorQueVinte "+isDezMenorQueVinte);
-        System.out.println("isDezIgualVinte "+isDezIgualVinte);
-        System.out.println("isDezDiferenteDeVinte "+isDezDiferenteDeVinte);
+        System.out.println("isDezMaiorQueVinte " + isDezMaiorQueVinte);
+        System.out.println("isDezMenorQueVinte " + isDezMenorQueVinte);
+        System.out.println("isDezIgualVinte " + isDezIgualVinte);
+        System.out.println("isDezDiferenteDeVinte " + isDezDiferenteDeVinte);
 
-        //operadores && (AND) || (OR) !
+        //operadores && (AND) || (OR) ! (negação)
         int idade = 29;
         float salario = 3500F;
         boolean isDentroDaLeiMaiorQueTrinta = idade >= 30 && salario >= 4612;
@@ -41,6 +41,38 @@ public class Aula04Operadores {
         System.out.println(isDentroDaLeiMaiorQueTrinta);
         System.out.println(isDentroDaLeiMenorQueTrinta);
 
+        double valorTotalContaCorrente = 200;
+        double valorTotalContaPoupança = 10000;
+        float valorPlaystation = 5000F;
+        boolean isPlaystationCompravel = valorTotalContaCorrente > valorPlaystation || valorTotalContaPoupança > valorPlaystation;
 
+        System.out.println(isPlaystationCompravel);
+
+        //operadores de atribuição: = += -= aritméticos= ...
+        double bonus = 1800;
+        bonus += 1000; //2800
+        bonus -= 1000; //1800
+        bonus *= 2; //3600
+        bonus /= 2; //1800
+
+        System.out.println(bonus);
+
+        //operadores unários: ++ --
+        // depois da variável, primeira realiza a operação e depois acrecenta
+        int contador = 0;
+        contador += 1;//1
+        contador++; //2
+        contador--; //1
+
+        System.out.println(contador);
+
+        // aqui já acrescenta antes mesmo da operação
+        int contador2 = 0;
+        System.out.println(contador2++);
+        System.out.println(contador2);
+
+        int contador3 = 0;
+        System.out.println(++contador3);
+        System.out.println(contador3);
     }
 }
