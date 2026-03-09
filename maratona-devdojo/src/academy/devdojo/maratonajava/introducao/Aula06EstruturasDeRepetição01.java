@@ -1,6 +1,6 @@
 package academy.devdojo.maratonajava.introducao;
 
-public class Aula06EstruturasDeRepetição {
+public class Aula06EstruturasDeRepetição01 {
     public static void main(String[] args) {
         //while, do while e for
         // em casos de apenas 1 expressão, as chaves podem ser ocultadas
